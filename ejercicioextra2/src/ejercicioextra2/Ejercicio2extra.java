@@ -24,7 +24,7 @@ public class Ejercicio2extra {
         
         ArrayList<CantanteFamoso> listaCantantesFamosos = servicio.guardar5CantantesFamosos();
         
-        servicio.mostarCantantesFamosos(listaCantantesFamosos);
+        servicio.menuCantantesFamosos(listaCantantesFamosos);
         
     }
 
