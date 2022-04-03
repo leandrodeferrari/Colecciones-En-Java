@@ -1,7 +1,7 @@
 package ejercicio1y2.Servicios;
 
 import ejercicio1y2.Entidades.Perro;
-import ejercicio1y2.Utilidades.Comparador;
+import ejercicio1y2.Utilidades.Comparadores;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -66,14 +66,14 @@ public class ServicioPerro {
 
         if (bandera == true) {
 
-            Collections.sort(listaRazas, Comparador.ordenarRazas);
+            Collections.sort(listaRazas, Comparadores.ordenarRazas);
             
             System.out.println(listaRazas.toString());
 
         } else {
 
             System.out.println("La raza que ha ingresado, no se encuentra en la lista");
-            Collections.sort(listaRazas, Comparador.ordenarRazas);
+            Collections.sort(listaRazas, Comparadores.ordenarRazas);
             
             System.out.println(listaRazas.toString());
 
