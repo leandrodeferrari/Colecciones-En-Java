@@ -2,12 +2,10 @@
 package ejercicioextra3.Entidades;
 
 import java.util.HashSet;
-import java.util.Objects;
-
 
 public class Libreria {
 
-    HashSet<Libro> coleccionDeLibros;
+    private HashSet<Libro> coleccionDeLibros;
 
     public Libreria() {
         coleccionDeLibros = new HashSet();

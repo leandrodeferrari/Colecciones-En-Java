@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Ciudad {
 
-    HashMap<String, String> listaCiudades;
+    private HashMap<String, String> listaCiudades;
 
     public Ciudad() {
         listaCiudades = new HashMap();
