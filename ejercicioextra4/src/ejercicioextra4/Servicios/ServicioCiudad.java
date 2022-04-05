@@ -1,3 +1,4 @@
+
 package ejercicioextra4.Servicios;
 
 import java.util.HashMap;
@@ -97,9 +98,16 @@ public class ServicioCiudad {
             System.out.println("Ingrese la " + (i+1) + "° ciudad que desea eliminar");
             ciudadParaBorrar = leer.next();
             
-            if (listaCiudades.containsValue(ciudadParaBorrar)){
+            if (estaLaCiudadEnLaLista(listaCiudades, ciudadParaBorrar)){
                 
-                listaCiudades.remove(ciudadParaBorrar);
+                String codigoPostalParaBorrar = encontrarCodigoPostalMedianteCiudad(listaCiudades, ciudadParaBorrar);
+                
+                System.out.println("Ciudad eliminada");
+                listaCiudades.remove(codigoPostalParaBorrar);
+                
+            } else {
+                
+                System.out.println("Lo siento, la ciudad que queres eliminar, no se encuentra en la lista");
                 
             }
             
@@ -109,4 +117,30 @@ public class ServicioCiudad {
 
     }
 
+    public boolean estaLaCiudadEnLaLista(HashMap<String,String> listaCiudades, String ciudadParaBorrar){
+        
+        return listaCiudades.containsValue(ciudadParaBorrar);
+        
+    }
+    
+    public String encontrarCodigoPostalMedianteCiudad(HashMap<String, String> listaCiudades, String ciudad){
+        
+        String codigoPostal = "";
+        
+        for (Map.Entry<String, String> elemento : listaCiudades.entrySet()) {
+            String key = elemento.getKey();
+            String value = elemento.getValue();
+            
+            if(ciudad.equals(value)){
+                
+                codigoPostal = key;
+                
+            }
+            
+        }
+        
+        return codigoPostal;
+        
+    }
+    
 }

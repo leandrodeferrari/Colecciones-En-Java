@@ -4,8 +4,6 @@ package ejercicioextra4;
 import ejercicioextra4.Entidades.Ciudad;
 import ejercicioextra4.Servicios.ServicioCiudad;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
 
 public class Ejercicioextra4 {
 
