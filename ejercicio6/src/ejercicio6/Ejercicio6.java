@@ -1,6 +1,6 @@
 package ejercicio6;
 
-import ejercicio6.Servicios.ServicioProducto;
+import ejercicio6.servicios.ServicioProducto;
 import java.util.HashMap;
 
 public class Ejercicio6 {
