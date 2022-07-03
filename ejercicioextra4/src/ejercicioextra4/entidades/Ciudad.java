@@ -1,8 +1,6 @@
-
 package ejercicioextra4.entidades;
 
 import java.util.HashMap;
-
 
 public class Ciudad {
 
@@ -26,7 +24,7 @@ public class Ciudad {
 
     @Override
     public String toString() {
-        return "Ciudad{" + "listaCiudades=" + listaCiudades + '}';
+        return "Ciudad{" + "listaCiudades=" + listaCiudades.toString() + '}';
     }
     
 }

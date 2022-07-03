@@ -1,14 +1,11 @@
-
 package ejercicioextra4.servicios;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
-public class ServicioCiudad {
+public class CiudadServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    HashMap<String, String> listaCiudades;
+    private HashMap<String, String> listaCiudades;
 
     public HashMap<String, String> cargar10Ciudades() {
 
@@ -35,6 +32,7 @@ public class ServicioCiudad {
     public void mostrarCiudades(HashMap<String, String> listaCiudades) {
 
         for (Map.Entry<String, String> ciudad : listaCiudades.entrySet()) {
+            
             String key = ciudad.getKey();
             String value = ciudad.getValue();
 

@@ -2,7 +2,7 @@
 package ejercicioextra4;
 
 import ejercicioextra4.entidades.Ciudad;
-import ejercicioextra4.servicios.ServicioCiudad;
+import ejercicioextra4.servicios.CiudadServicio;
 import java.util.HashMap;
 
 public class EjercicioExtra4 {
@@ -19,7 +19,7 @@ public class EjercicioExtra4 {
         // f) Elimina 3 ciudades existentes dentro del HashMap, que pida el usuario.
         // g) Muestra por pantalla los datos.
         
-        ServicioCiudad servicio = new ServicioCiudad();
+        CiudadServicio servicio = new CiudadServicio();
         
         HashMap<String, String> listaCiudades = servicio.cargar10Ciudades();
 
