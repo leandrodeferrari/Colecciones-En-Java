@@ -2,7 +2,7 @@
 package ejercicio3;
 
 import ejercicio3.entidades.Alumno;
-import ejercicio3.servicios.ServicioAlumno;
+import ejercicio3.servicios.AlumnoServicio;
 import java.util.ArrayList;
 
 public class Ejercicio3 {
@@ -24,7 +24,7 @@ public class Ejercicio3 {
         // notas para calcular el promedio final de alumno. Siendo este promedio 
         // final, devuelto por el método y mostrado en el main.
         
-        ServicioAlumno servicio = new ServicioAlumno();
+        AlumnoServicio servicio = new AlumnoServicio();
         
         ArrayList<Alumno> listaAlumnos = servicio.crearAlumno();
         

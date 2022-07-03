@@ -4,7 +4,7 @@ import ejercicio3.entidades.Alumno;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ServicioAlumno {
+public class AlumnoServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
 

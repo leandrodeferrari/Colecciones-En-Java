@@ -1,19 +1,15 @@
-
 package ejercicio3.entidades;
 
-import java.util.ArrayList;
-import java.util.Objects;
-
+import java.util.*;
 
 public class Alumno {
 
     private String nombre;
-    
     private ArrayList<Integer> notasAlumno;
 
     public Alumno() {
         notasAlumno = new ArrayList();
-        
+
     }
 
     public Alumno(String nombre, ArrayList<Integer> notasAlumno) {
@@ -38,11 +34,6 @@ public class Alumno {
     }
 
     @Override
-    public String toString() {
-        return "Alumno{" + "nombre=" + nombre + ", notasAlumno=" + notasAlumno + '}';
-    }
-
-    @Override
     public int hashCode() {
         int hash = 7;
         return hash;
@@ -62,7 +53,10 @@ public class Alumno {
         final Alumno other = (Alumno) obj;
         return Objects.equals(this.nombre, other.nombre);
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Alumno{" + "nombre=" + nombre + ", notasAlumno=" + notasAlumno + '}';
+    }
+
 }
