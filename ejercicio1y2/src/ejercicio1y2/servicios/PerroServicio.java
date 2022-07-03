@@ -2,19 +2,15 @@ package ejercicio1y2.servicios;
 
 import ejercicio1y2.entidades.Perro;
 import ejercicio1y2.utilidades.Comparadores;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.util.*;
 
-public class ServicioPerro {
+public class PerroServicio {
 
-    Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    ArrayList<String> listaRazas;
+    private final Scanner leer = new Scanner(System.in).useDelimiter("\n");
+    private ArrayList<String> listaRazas;
 
-    public ServicioPerro() {
+    public PerroServicio() {
         this.listaRazas = new ArrayList<>();
-        this.leer = new Scanner(System.in).useDelimiter("\n");
     }
 
     public Perro guardarRazas() {
@@ -51,6 +47,7 @@ public class ServicioPerro {
 
         System.out.println("Ingrese la raza que desea eliminar");
         raza = leer.next();
+        
         Iterator it = listaRazas.iterator();
 
         while (it.hasNext()) {

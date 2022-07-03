@@ -2,7 +2,7 @@
 package ejercicio1y2;
 
 import ejercicio1y2.entidades.Perro;
-import ejercicio1y2.servicios.ServicioPerro;
+import ejercicio1y2.servicios.PerroServicio;
 
 public class Ejercicio1y2 {
 
@@ -21,7 +21,7 @@ public class Ejercicio1y2 {
         // lista ordenada. Si la raza no se encuentra en la lista, se le 
         // informará al usuario y se mostrará la lista ordenada.
         
-        ServicioPerro servicio = new ServicioPerro();
+        PerroServicio servicio = new PerroServicio();
         
         Perro perroUsuario = servicio.guardarRazas();
         
