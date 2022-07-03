@@ -3,7 +3,7 @@
 package ejercicioextra2;
 
 import ejercicioextra2.entidades.CantanteFamoso;
-import ejercicioextra2.servicios.ServicioCantanteFamoso;
+import ejercicioextra2.servicios.CantanteFamosoServicio;
 import java.util.ArrayList;
 
 public class EjercicioExtra2 {
@@ -20,7 +20,7 @@ public class EjercicioExtra2 {
         // eliminar un cantante que el usuario elija o de salir del programa. 
         // Al final se deberá mostrar la lista con todos los cambios.
         
-        ServicioCantanteFamoso servicio = new ServicioCantanteFamoso();
+        CantanteFamosoServicio servicio = new CantanteFamosoServicio();
         
         ArrayList<CantanteFamoso> listaCantantesFamosos = servicio.guardar5CantantesFamosos();
         

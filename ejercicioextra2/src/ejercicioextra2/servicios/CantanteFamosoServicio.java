@@ -3,10 +3,10 @@ package ejercicioextra2.servicios;
 import ejercicioextra2.entidades.CantanteFamoso;
 import java.util.*;
 
-public class ServicioCantanteFamoso {
+public class CantanteFamosoServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    ArrayList<CantanteFamoso> listaDeCantantesFamosos;
+    private ArrayList<CantanteFamoso> listaDeCantantesFamosos;
 
     public ArrayList<CantanteFamoso> guardar5CantantesFamosos() {
 

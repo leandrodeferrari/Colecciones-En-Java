@@ -1,11 +1,9 @@
-
 package ejercicioextra2.entidades;
-
 
 public class CantanteFamoso {
 
-    String nombre;
-    String discoConMasVentas;
+    private String nombre;
+    private String discoConMasVentas;
 
     public CantanteFamoso() {
     }
