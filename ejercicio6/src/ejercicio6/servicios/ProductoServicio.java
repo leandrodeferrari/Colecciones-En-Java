@@ -1,13 +1,11 @@
 package ejercicio6.servicios;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
-public class ServicioProducto {
+public class ProductoServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    HashMap<String, Double> listaProductos;
+    private HashMap<String, Double> listaProductos;
 
     public HashMap<String, Double> cargarProductos() {
 

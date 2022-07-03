@@ -1,11 +1,8 @@
-
 package ejercicio6.entidades;
-
 
 public class Producto {
 
     private String nombre;
-    
     private Double precio;
 
     public Producto() {
@@ -30,6 +27,11 @@ public class Producto {
 
     public void setPrecio(Double precio) {
         this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "nombre=" + nombre + ", precio=" + precio + '}';
     }
     
 }

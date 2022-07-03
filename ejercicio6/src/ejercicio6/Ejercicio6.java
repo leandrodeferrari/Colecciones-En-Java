@@ -1,6 +1,6 @@
 package ejercicio6;
 
-import ejercicio6.servicios.ServicioProducto;
+import ejercicio6.servicios.ProductoServicio;
 import java.util.HashMap;
 
 public class Ejercicio6 {
@@ -17,7 +17,7 @@ public class Ejercicio6 {
         // el nombre del producto y de valor el precio. Realizar un menú para 
         // lograr todas las acciones previamente mencionadas.
         
-        ServicioProducto servicio = new ServicioProducto();
+        ProductoServicio servicio = new ProductoServicio();
         
         HashMap<String, Double> listaProductos = servicio.cargarProductos();
         
