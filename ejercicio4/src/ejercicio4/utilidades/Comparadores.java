@@ -6,6 +6,7 @@ import ejercicio4.entidades.Pelicula;
 public class Comparadores {
 
     public static Comparator<Pelicula> compararSegunDuracionAscendente = new Comparator<Pelicula>() {
+        
         @Override
         public int compare(Pelicula p1, Pelicula p2) {
 
@@ -16,6 +17,7 @@ public class Comparadores {
     };
 
     public static Comparator<Pelicula> compararSegunDuracionDescendente = new Comparator<Pelicula>() {
+        
         @Override
         public int compare(Pelicula p1, Pelicula p2) {
 
@@ -26,6 +28,7 @@ public class Comparadores {
     };
 
     public static Comparator<Pelicula> compararSegunTitulo = new Comparator<Pelicula>() {
+        
         @Override
         public int compare(Pelicula p1, Pelicula p2) {
 
@@ -36,6 +39,7 @@ public class Comparadores {
     };
 
     public static Comparator<Pelicula> compararSegunDirector = new Comparator<Pelicula>() {
+        
         @Override
         public int compare(Pelicula p1, Pelicula p2) {
 

@@ -1,6 +1,6 @@
 package ejercicio4;
 
-import ejercicio4.servicios.ServicioPelicula;
+import ejercicio4.servicios.PeliculaServicio;
 import ejercicio4.entidades.Pelicula;
 import java.util.ArrayList;
 
@@ -29,7 +29,7 @@ public class Ejercicio4 {
         // e. Ordenar las películas por titulo, alfabéticamente y mostrarlo en pantalla.
         // f. Ordenar las películas por director, alfabéticamente y mostrarlo en pantalla.
         
-        ServicioPelicula servicio = new ServicioPelicula();
+        PeliculaServicio servicio = new PeliculaServicio();
         
         ArrayList<Pelicula> listaPeliculas = servicio.crearPeliculas();
         

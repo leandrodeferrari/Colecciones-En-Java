@@ -1,12 +1,9 @@
 package ejercicio4.entidades;
 
-
 public class Pelicula {
 
     private String titulo;
-
     private String director;
-
     private Double duracionPeliculaEnHoras;
 
     public Pelicula() {

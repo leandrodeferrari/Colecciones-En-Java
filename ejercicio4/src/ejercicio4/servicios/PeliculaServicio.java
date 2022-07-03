@@ -5,7 +5,7 @@ import ejercicio4.utilidades.Comparadores;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ServicioPelicula {
+public class PeliculaServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
@@ -44,9 +44,9 @@ public class ServicioPelicula {
 
     public void mostrarPeliculas(ArrayList<Pelicula> listaPeliculas) {
 
-        for (Pelicula peliculas : listaPeliculas) {
+        listaPeliculas.forEach((peliculas) -> {
             System.out.print(peliculas.getTitulo() + " ");
-        }
+        });
 
         System.out.println("");
 
