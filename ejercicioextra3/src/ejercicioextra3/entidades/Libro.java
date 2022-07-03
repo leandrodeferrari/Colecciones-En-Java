@@ -1,8 +1,6 @@
-
 package ejercicioextra3.entidades;
 
 import java.util.Objects;
-
 
 public class Libro {
 
@@ -54,11 +52,6 @@ public class Libro {
     }
 
     @Override
-    public String toString() {
-        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", numeroDeEjemplares=" + numeroDeEjemplares + ", numeroDeEjemplaresPrestados=" + numeroDeEjemplaresPrestados + '}';
-    }
-
-    @Override
     public int hashCode() {
         int hash = 7;
         hash = 89 * hash + Objects.hashCode(this.titulo);
@@ -82,5 +75,10 @@ public class Libro {
         }
         return true;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", numeroDeEjemplares=" + numeroDeEjemplares + ", numeroDeEjemplaresPrestados=" + numeroDeEjemplaresPrestados + '}';
+    }
+
 }

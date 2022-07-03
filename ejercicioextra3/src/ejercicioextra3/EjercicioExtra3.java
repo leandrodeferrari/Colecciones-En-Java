@@ -1,9 +1,8 @@
-
 package ejercicioextra3;
 
 import ejercicioextra3.entidades.Libreria;
 import ejercicioextra3.entidades.Libro;
-import ejercicioextra3.servicios.ServicioLibreria;
+import ejercicioextra3.servicios.LibreriaServicio;
 import java.util.HashSet;
 
 public class EjercicioExtra3 {
@@ -40,7 +39,7 @@ public class EjercicioExtra3 {
         // prestados. Devuelve true si se ha podido realizar la operación y false en caso contrario.
         // f) Método toString para mostrar los datos de los libros.
         
-        ServicioLibreria servicioLibreria = new ServicioLibreria();
+        LibreriaServicio servicioLibreria = new LibreriaServicio();
         HashSet<Libro> coleccionDeLibros = servicioLibreria.guardarColeccionDeLibros();
         Libreria libreria = new Libreria(coleccionDeLibros);
         

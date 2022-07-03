@@ -5,7 +5,7 @@ import ejercicioextra3.entidades.Libro;
 import java.util.Scanner;
 
 
-public class ServicioLibro {
+public class LibroServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     Libro libroUsuario;

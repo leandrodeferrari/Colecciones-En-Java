@@ -1,17 +1,16 @@
 package ejercicioextra3.servicios;
 
 import ejercicioextra3.entidades.Libro;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
-public class ServicioLibreria {
+public class LibreriaServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
 
     public HashSet<Libro> guardarColeccionDeLibros() {
 
         HashSet<Libro> coleccionDeLibros = new HashSet();
-        ServicioLibro servicioLibro = new ServicioLibro();
+        LibroServicio servicioLibro = new LibroServicio();
         Libro libroUsuario;
         String opcion;
 
@@ -127,6 +126,7 @@ public class ServicioLibreria {
     public void mostrarColeccionDeLibros(HashSet<Libro> coleccionDeLibros) {
 
         System.out.println(coleccionDeLibros.toString());
+        
     }
 
 }
