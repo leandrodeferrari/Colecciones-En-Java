@@ -1,16 +1,11 @@
 package ejercicio5.servicios;
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
+import java.util.*;
 
-public class ServicioPais {
+public class PaisServicio {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-
-    HashSet<String> listaPaises;
+    private HashSet<String> listaPaises;
 
     public HashSet<String> guardarPaises() {
 

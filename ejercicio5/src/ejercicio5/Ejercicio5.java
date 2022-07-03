@@ -1,9 +1,8 @@
 
 package ejercicio5;
 
-import ejercicio5.servicios.ServicioPais;
-import java.util.ArrayList;
-import java.util.HashSet;
+import ejercicio5.servicios.PaisServicio;
+import java.util.*;
 
 public class Ejercicio5 {
 
@@ -23,7 +22,8 @@ public class Ejercicio5 {
         // en el conjunto se eliminará el país que ingresó el usuario y se 
         // mostrará el conjunto. Si el país no se encuentra en el conjunto se le informará al usuario.
         
-        ServicioPais servicio = new ServicioPais();
+        PaisServicio servicio = new PaisServicio();
+        
         ArrayList<String> listaPaisesOrdenada;
         
         HashSet<String> listaPaises = servicio.guardarPaises();
